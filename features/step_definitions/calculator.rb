@@ -21,3 +21,7 @@ end
 When /I press multiplicate/ do
   @calculator.multiplicate
 end
+
+When /I press divide/ do
+  @calculator.divide
+end

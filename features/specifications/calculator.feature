@@ -14,3 +14,9 @@ Feature: Addition
     And I have entered 10 into the calculator
     When I press multiplicate
     Then the result should be 50 on the screen
+
+  Scenario: Divide two numbers
+    Given I have entered 50 into the calculator
+    And I have entered 2 into the calculator
+    When I press divide
+    Then the result should be 25 on the screen
