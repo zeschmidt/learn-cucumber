@@ -1,4 +1,4 @@
-class Calculator 
+class Calculator
 
   def push(n)
     @args ||= []
@@ -6,14 +6,14 @@ class Calculator
   end
 
   def add
-   @result ||= 0 
+   @result ||= 0
     @args.each do |n|
       @result = @result + n
     end
   end
 
   def result
-    @result
+    @result || 0
   end
 
 end
