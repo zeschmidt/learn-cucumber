@@ -12,6 +12,12 @@ When /I press add/ do
 end
 
 Then /the result should be (.*) on the screen/ do |n|
+  # require 'pry'
+  # binding.pry
   expect(@calculator.result).to eq(n.to_i)
  # @calculator.result
+end
+
+When /I press multiplicate/ do
+  @calculator.multiplicate
 end
