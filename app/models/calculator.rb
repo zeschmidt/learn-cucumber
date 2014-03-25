@@ -5,7 +5,7 @@ class Calculator
     @args << n
   end
 
-  def add
+  def sum
    @result ||= 0
     @args.each do |n|
       @result = @result + n
