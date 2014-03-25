@@ -10,7 +10,7 @@ describe Calculator do
     end
 
     it 'sum' do
-      expect(subject).to respond_to(:add)
+      expect(subject).to respond_to(:sum)
     end
 
     it 'sum two values' do
@@ -18,7 +18,7 @@ describe Calculator do
       expect(c.result).to eql(0)
       c.push 2
       c.push 3
-      c.add
+      c.sum
       expect(c.result).to eql(5)
     end
   end
