@@ -36,7 +36,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :test do
+group :test, :development do
   gem 'cucumber-rails'
   gem 'database_cleaner'
   gem 'rspec-rails'

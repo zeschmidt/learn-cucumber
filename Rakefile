@@ -4,3 +4,7 @@
 require File.expand_path('../config/application', __FILE__)
 
 LearmCucumbler::Application.load_tasks
+
+unless ENV['RACK_ENV'] == 'production'
+  task default: [:spec, :cucumber]
+end
