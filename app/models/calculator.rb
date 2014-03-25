@@ -20,7 +20,7 @@ class Calculator
   end
 
   def result
-    @result
+    @result || 0
   end
 
 end
