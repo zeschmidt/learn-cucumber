@@ -26,6 +26,13 @@ class Calculator
     end
   end
 
+  def subtract
+  @result ||= 0
+    @args.each do |n|
+      @result = @result - n
+    end
+  end
+
   def result
     @result || 0
   end
