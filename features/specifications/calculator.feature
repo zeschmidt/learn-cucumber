@@ -20,3 +20,9 @@ Feature: Addition
     And I have entered 2 into the calculator
     When I press divide
     Then the result should be 25 on the screen
+  Scenario: Subtract two numbers
+    Given I have entered 20 into the calculator
+    And I have entered 15 into the calculator
+    When I press subtract
+    Then the result should be 5 on the screen
+
