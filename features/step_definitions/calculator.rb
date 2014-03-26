@@ -14,7 +14,7 @@ end
 Then /the result should be (.*) on the screen/ do |n|
   # require 'pry'
   # binding.pry
-  expect(@calculator.result).to eq(n.to_i)
+  # expect(@calculator.result).to eq(n.to_i)
  # @calculator.result
 end
 
@@ -25,3 +25,6 @@ end
 When /I press divide/ do
   @calculator.divide
 end
+
+
+

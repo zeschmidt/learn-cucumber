@@ -19,6 +19,13 @@ class Calculator
     end
   end
 
+  def divide
+  @result ||= 0
+    @args.each do |n|
+      @result = @result / n
+    end
+  end
+
   def result
     @result
   end
